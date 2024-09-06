@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keithson Hospitals</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./order.css">
+    <script src="./script.js"></script>
+    <script src="./order.js"></script>
+</head>
+<body>
+    <section class="responsive-container">
+        <!-- Header -->
+        <header class="fluid page-header">
+            <section class="responsive responsive-header-title">
+
+                <span class="responsive-header-title-name">Keithson Hospitals</span>
+                <span class="responsive-header-title-logo centered-image">
+                    <img src="./Images/KeithSon.png" id="logo_image" alt="Keithson Hospitals Logo">
+                </span>
+
+            </section>
+            <section class="emergency-bar text-left">
+                <section class="responsive">
+                    <img src="./Images/icons8-whatsapp-50.png" alt="">
+                    <span>
+                        018 459 8762
+                    </span>
+                    <span>
+                        |
+                    </span>
+                    <img src="./Images/icons8-instagram-50.png" alt="">
+                    <span>
+                        @keithsonhospitals
+                    </span>
+                </section>
+            </section>
+            <section class="responsive">
+                <nav id="responsive-navbar" class="responsive-centered responsive-navbar">
+                    <input id="navbar-expand-checkbox" type="checkbox">
+                    <ul>
+                        <li><a href="home.html">HOME</a></li>
+                        <li><a href="services.html">SERVICES</a></li>
+                        <li><a href="doctors.html">DOCTORS</a></li>
+                        <li class="active"><a href="Pharmacy.html">PHARMACY</a></li>
+                        <li><a href="consult.html">CONSULTING</a></li>
+                        <li><a href="news.html">NEWS</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                    </ul>
+
+                    <a class="navbar-expand">
+                        <label id="navbar-expand-label" for="navbar-expand-checkbox">
+                            &#9776;
+                        </label>
+                    </a>
+                </nav>
+            </section>
+        </header>
+
+        <section class="container">
+
+            <form action="">
+              <div class="Favourites-buttons">
+                  <button id="save">Save to Favourites</button>
+                  <button id="load">Load Favourites</button>
+              </div>
+        
+                <section class="row">
+        
+                    <section class="col">
+        
+                        <h3 class="title">Billing Details</h3>
+        
+                        <section class="inputBox">
+                            <span>Full Name :</span>
+                            <input type="text" placeholder="Full Name" id="customerName" name="customerName">
+                        </section>
+                        <section class="inputBox">
+                            <span>Email :</span>
+                            <input type="email" placeholder="example@example.com" id="email" name="email">
+                        </section>
+                        <section class="inputBox">
+                            <span>Address :</span>
+                            <input type="text" placeholder="Home Address" id="address" name="address">
+                        </section>
+                        <section class="inputBox">
+                            <span>City :</span>
+                            <input type="text" placeholder="City" id="city" name="city">
+                        </section>
+        
+                        <section class="flex">
+                            <section class="inputBox">
+                                <span>State/Province :</span>
+                                <input type="text" placeholder="State" id="state" name="state">
+                            </section>
+                            <section class="inputBox">
+                                <span>Zip Code :</span>
+                                <input type="text" placeholder="123 456" id="zipcode" name="zipcode">
+                            </section>
+                        </section>
+        
+                    </section>
+        
+                    <section class="col">
+        
+                        <h3 class="title">Payment Details</h3>
+        
+                        <section class="inputBox">
+                            <span>Cards Accepted :</span>
+                            <img src="./Images/card_img.png" alt="Credit Cards">
+                        </section>
+                        <section class="inputBox">
+                            <span>Name on card :</span>
+                            <input type="text" placeholder="Name on Card" id="cardName" name="cardName">
+                        </section>
+                        <section class="inputBox">
+                            <span>Card Number :</span>
+                            <input type="number" placeholder="1111-2222-3333-4444" id="cardNumber" name="cardNumber">
+                        </section>
+                        <section class="inputBox">
+                            <span>Exp month :</span>
+                            <input type="text" placeholder="january" id="month" name="month">
+                        </section>
+        
+                        <section class="flex">
+                            <section class="inputBox">
+                                <span>exp year :</span>
+                                <input type="number" placeholder="2022" id="year" name="year">
+                            </section>
+                            <section class="inputBox">
+                                <span>CVV :</span>
+                                <input type="text" placeholder="1234" id="cvv" name="cvv">
+                            </section>
+                        </section>
+                    </section>
+                    <div class="cart-section">
+                      <table id="cart-table">
+                        <caption>Cart</caption>
+                        <thead>
+                          <tr>
+                            <th>Product</th>
+                            <th>Name</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Remove</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                      </table>
+                  </div>
+                  <div class="total-price"></div>
+                </section>
+                <center><button id="pay">Pay</button></center>
+            </form>
+        
+        </section> 
+</body>
+</html>
